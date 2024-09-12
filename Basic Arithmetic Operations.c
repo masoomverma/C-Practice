@@ -2,7 +2,8 @@
 int main()
 {
     clrscr(); 
-    int s,a,b,add,sub,mul,div;
+    int s,a,b,add,sub,mul;
+    float div;
     printf("Enter the first number: ");
     scanf("%d",&a);
     printf("Enter the second number: ");
@@ -13,17 +14,28 @@ int main()
     {
         case 1:
           add = a + b
-          printf("The Addition is %d.",add);
+          printf("The Addition is %d.\n",add);
         case 2:
           sub = a + b
-          printf("The Subctraction is %d.",sub);    
+          printf("The Subctraction is %d.\n",sub);    
         case 3:
           mul = a * b
-          printf("The Multiplication is %d.",mul);
+          printf("The Multiplication is %d.\n",mul);
         case 4:
-            div = a / b
-          printf("The Division is %d.",div);
-    }
-    getch();
+            if(b != 0)
+            {
+                div = a / b
+                printf("The Division is %d.\n",div);
+            }
+            else
+            {
+                printf("Error, Division by zero is not DEFINE.\n");
+    
+            }
+            break;
+        default :
+            printf("Invalid Choise.\n");
+                
+            getch();
     return 0;
 }
