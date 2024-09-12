@@ -15,9 +15,22 @@ int main()
           add = a + b
           printf("The Addition is %d.",add);
     }
-    else
+    if(select == 2)
     {
-        printf("The number %d is Odd.",num);
+          sub = a + b
+          printf("The Subctraction is %d.",sub);
+    }
+    
+    if(select == 3)
+    {
+          mul = a * b
+          printf("The Multiplication is %d.",mul);
+    }
+    
+    if(select == 4)
+    {
+          div = a / b
+          printf("The Division is %d.",div);
     }
     getch();
     return 0;
