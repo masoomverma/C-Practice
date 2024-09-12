@@ -6,13 +6,13 @@ int main()
     int num;
     printf("Enter the number: ");
     scanf("%d",&num);
-    if(number % == 0)
+    if(num % 2 == 0)
     {
-        printf("The number is Even.");
+        printf("The number %d is Even.",num);
     }
     else
     {
-        printf("The number is Odd.");
+        printf("The number %d is Odd.",num);
     }
     getch();
     return 0;
