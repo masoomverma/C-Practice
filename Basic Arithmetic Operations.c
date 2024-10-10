@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main() {
     int s, a, b, add, sub, mul;
     float div;
